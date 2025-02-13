@@ -6,12 +6,12 @@ let attempts = 0;
 userGuess = Number(prompt('Enter a number between 1 and 10: '));
 // Create while loop that continues for as long as the user guesses are incorrect.
 while (userGuess !== randomNumber){
-    // Loop should count the number of guesses.
-    attempts++
     // Loop should exit if user enters 999 and not display "Too high!"
     if (userGuess === 999){
         break;
     }
+    // Loop should count the number of guesses.
+    attempts++
     if (userGuess < 1 || userGuess > 10){
         // If anything else is entered, the user should be prompted that their input is invalid and to guess again.
         window.alert('WRONG. Input a number between 1 and 10.');
